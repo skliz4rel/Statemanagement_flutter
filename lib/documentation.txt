@@ -1,0 +1,35 @@
+Flutter Lifecyle
+
+Every thing in flutter is a widget
+
+There are 2 types of widget
+1. Stateless Widget :  This can only be created once. Can never be recreated
+2. Stateful Widget: This can be recreated when the data state has be updated. Recreated to render the new state change.
+THe build function can run multiple times.
+
+Stateless Widget
+Constructor
+|
+|
+Build()
+
+Stateful Widget
+Constructor
+|
+|
+initState()   --- This method is run once after our constructor is created. It is used to run async calls, initialize sockets before the view of widget is rendered.
+It runs at the beginging of the App. We can use subscribe to services.
+|
+|
+didChangeDependencies();  ----Called immediately after initState(). It is used to call after the piece of data that widget depends on is updated. Called very rarely.
+|
+|
+didUpdateWidget() -- called immeidately a widget attached to this state is released by another widget
+|
+|
+dispose();
+used to remove all the connections and object resource cleaning. Prevent memeory leak
+
+
+
+
