@@ -5,7 +5,7 @@ Every thing in flutter is a widget
 There are 2 types of widget
 1. Stateless Widget :  This can only be created once. Can never be recreated
 2. Stateful Widget: This can be recreated when the data state has be updated. Recreated to render the new state change.
-THe build function can run multiple times.
+The build function can run multiple times.
 
 Stateless Widget
 Constructor
